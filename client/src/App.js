@@ -8,7 +8,7 @@ import MovieHeader from './components/MovieHeader';
 
 import EditMovieForm from './components/EditMovieForm';
 import FavoriteMovieList from './components/FavoriteMovieList';
-
+import AddMovieForm from './components/AddMovieForm';
 import axios from 'axios';
 
 const App = (props) => {
@@ -65,6 +65,9 @@ const App = (props) => {
 
             <Route path="/">
               <Redirect to="/movies"/>
+            </Route>
+            <Route path = '/movies'>
+              <AddMovieForm />
             </Route>
           </Switch>
         </div>
